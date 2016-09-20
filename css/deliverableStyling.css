@@ -1,5 +1,5 @@
 html{
-	background-color: #242222; /* Bytte bakgrunnfarge.*/ 
+	background-color: #262623; /* Bytte bakgrunnfarge.*/ 
 }
 body{
 	max-width: 720px;
@@ -14,7 +14,7 @@ h1{
 	color: #363636; /*Skrift-farge*/
 }
 div{
-	background-color: #e1d3d3;
+	background-color: #E2E0D0;
 	max-width: 720px; 
 	border-radius: 28px; 
 	padding: 15px 30px 15px 30px; 
@@ -22,6 +22,7 @@ div{
 }
 div.heading{
 	text-align: center;
+    margin-top: 10px;
 }
 h2{
 	font-family: helvetica ,verdana; /* Web-safe font */
