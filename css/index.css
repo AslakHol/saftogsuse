@@ -20,7 +20,6 @@ body{
 #logo img{
     width: 453px;
     height: 384px;
-    display: block;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -29,7 +28,7 @@ body{
 
 #nav{
     background-color: rgba(0,0,0,0.75);
-    position: absolute;
+    position: fixed;
     width: 100%; 
     bottom: 0;
     left: 0; 
@@ -40,5 +39,14 @@ body{
 .nav_element{
     display: inline-block;
     color: white;
-    margin: 15px 3%; 
+    margin: 20px 3%; 
 }
+
+a{
+    text-decoration: none;  
+}
+
+a:hover{
+    color: darkgray;
+}
+
