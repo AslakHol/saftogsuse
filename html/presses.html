@@ -3,6 +3,14 @@
 	<head>
 		<title>Presses</title>
 		<link rel='stylesheet' href='../css/main.css' type='text/css'>
+		<style>
+		#testText{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			visibility: hidden;
+		}
+		</style>
 	</head>
 	<body>
 	<!-- Header: -->
@@ -27,9 +35,10 @@
 		<!-- JS: Eplepresse -->
 		<!-- Bilde som stand-in til videre -->
 	<div>
-		<img src='../img/Presser/JSStand-InApplePress.jpg' type='img/jpg' usemap="#pressComponent">
-		<map name="pressComponent">
-			<area shape="rect" coords="0,0,400,400" alt="test">
+		<img src='../img/Presser/JSStand-InApplePress.jpg' type='img/jpg' usemap="#pressComponent" >
+		<img src='../img/press_click_img/testText.gif' type="img/gif" id="testText"/>
+		<map name="pressComponent" id="testMap">
+			<area shape="rect" coords="0,0,400,400" >
 		</map>
 	</div>
 
