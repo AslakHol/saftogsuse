@@ -6,14 +6,14 @@ body{
 #bg{
     min-height: 100%;
     min-width: 1024px;
-    
-    width: 100%; 
+
+    width: 100%;
     height: auto;
-    
+
     position: fixed;
     top: 0px;
-    left: 0px; 
-    
+    left: 0px;
+
     z-index: -999;
 }
 
@@ -23,15 +23,15 @@ body{
     position: fixed;
     left: 50%;
     top: 50%;
-    margin: -227px 0 0 -193px;
+    margin: -227px 0 0 -238px;
 }
 
 #nav{
     background-color: rgba(0,0,0,0.75);
     position: fixed;
-    width: 100%; 
+    width: 100%;
     bottom: 0;
-    left: 0; 
+    left: 0;
     text-align: center;
     font-size: 22pt;
 }
@@ -39,14 +39,13 @@ body{
 .nav_element{
     display: inline-block;
     color: white;
-    margin: 20px 3%; 
+    margin: 20px 3%;
 }
 
 a{
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 a:hover{
     color: darkgray;
 }
-
