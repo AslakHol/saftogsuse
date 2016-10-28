@@ -4,6 +4,10 @@ body, html{
 	margin: 0px;
 }
 
+#banner{
+	width:100%;
+}
+
 #content{
 	min-height: 100%;
 	width: 100%;
@@ -63,6 +67,8 @@ div.imgAndTextBelow{
 }
 ---*/
 /*--- Navbar styling ---*/
+
+
 #navbar ul {
 	list-style-type: none;
 	margin: 0;

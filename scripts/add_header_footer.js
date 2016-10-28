@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 			+	"<li><a href='kontakt_oss'>Kontakt oss</a></li>"
 		+	"</ul>"
 	+	"</div>"
+	+"<img src='img/banner.jpg' type='image/jpg' id='banner'>"
 	const footer = document.getElementById("footer")
 	footer.innerHTML = "<div class=logo><p>Saft og suse</p></div>"
 		+"<div class='footer_text'>"
