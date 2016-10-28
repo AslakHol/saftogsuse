@@ -15,3 +15,8 @@ We've decided to include a separate css file to accommodate the index page
 which will have a radically different design.
 Because of this the main css file has been renamed to main.css and both have
 been moved into a separate css folder.   
+
+## Fonts
+Some fonts and font sizes have changed after discussions with the client.
+
+Lucida Sans Unicode has been removed from h2, it was added by a mistake. 
