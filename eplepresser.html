@@ -3,7 +3,7 @@
 	<head>
 		<title>Presses</title>
 		<style>
-		#testText{
+		#testText, #testText2{
 			position: absolute;
 			top: 0px;
 			left: 0px;
@@ -34,10 +34,11 @@
 
 		<!-- JS: Eplepresse -->
 		<!-- Bilde som stand-in til videre -->
-	<div>
-		<img src='../img/Presser/JSStand-InApplePress.jpg' type='img/jpg' usemap="#pressComponent" >
-		<img src='../img/press_click_img/testText.gif' type="img/gif" id="testText" onclick="hideItem('testText')"/>
-		<map name="pressComponent" id="testMap" onclick="testMap('testText')">
+	<div id="interactive_press">
+		<img src='img/Presser/JSStand-InApplePress.jpg' type='img/jpg' usemap="#pressComponent" >
+		<img class="pressPopup" src='img/press_click_img/testText.gif' type="img/gif" id="testText" onclick="hideItem('testText','pressPopup')"/>
+		<img class="pressPopup" src='img/press_click_img/testText.gif' type="img/gif" id="testText2" onclick="hideAllBut('testText2','pressPopup')" top=10px;/>
+		<map name="pressComponent" id="testMap" onclick="hideAllBut('testText')">
 			<area shape="rect" coords="0,0,400,400" >
 		</map>
 	</div>
@@ -66,6 +67,6 @@
 		<img src="img/presser/" type="image/jpg"/>
 		<h3>Type of press</h3>
 		<p>Description</p>
-	<script src="../scripts/presses_click.js"></script>
+	<script src="scripts/presses_click.js"></script>
 	</body>
 </html>

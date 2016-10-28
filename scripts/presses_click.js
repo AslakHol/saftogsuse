@@ -3,8 +3,18 @@ function testMap(showText){
 	newBox.style.visibility="visible";
 	
 }
-function hideItem(item){
-	document.getElementById(item).style.visibility="hidden";
+
+//Hides all elements in class 'className' except for the item 'showItem'
+function hideAllBut(showItem, className){
+	textboxes = document.getElementsByClassName(className);
+	for(i=0; i < textboxes.length; i++){
+		var elmntID = textboxes[i].id;	document.getElementById(elmntID).style.visibility="hidden";
+		console.log(elmntID)
+	}
+	visibleBox = document.getElementById(showItem);
+	visibleBox.style.visibility="visible";
+	
 }
-document.getElementById("testMap").addEventListener("click", testMap("testText"));
-hideItem("testText");
+function hideItem(elmntID){
+	document.getElementById(elmntID).style.visibility="hidden";
+}
