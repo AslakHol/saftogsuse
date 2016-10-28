@@ -44,10 +44,12 @@
 }
 
 /*-- Boxes --*/
+
 body{
 	width: 100vh;
 	height: 100vh;
 }
+
 div.imgAndTextNextTo{
 	position: relative;
 	display: block;
@@ -55,6 +57,7 @@ div.imgAndTextNextTo{
 	height: 20%;
 	left:0;
 }
+
 
 div.imgAndTextNextTo img{
 	position: absolute;
@@ -69,6 +72,7 @@ div.imgAndTextNextTo p{
 	width: 50%;
 	right: 0;
 }
+
 
 
 div.imgAndTextBelow{
