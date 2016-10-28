@@ -8,6 +8,16 @@ body, html{
 	width:100%;
 }
 
+h1{
+	text-align: center;
+}
+
+#ingress{
+	width:45%;
+	text-align: center;
+	margin: auto;
+}
+
 /*--- Box styling ---*/
 
 #content{
@@ -17,25 +27,25 @@ body, html{
 	padding: 35px 40px;
 }
 
-div.imgAndTextNextTo{
+.imgAndTextNextTo{
 	position: relative;
-	width: 60%;
+	width: 75%;
 	margin: 50px auto 80px auto;
 	display:block;
 	height:200px;
 }
 
-div.imgAndTextNextTo img{
+.imgAndTextNextTo img{
 position: absolute;
 }
 
-div.imgAndTextNextTo .textBox{
+.imgAndTextNextTo .textBox{
 	position: absolute;
 	right: 0;
 	width: calc(100% - 200px);
 }
 
-div.imgAndTextNextTo h2{
+.imgAndTextNextTo h2{
 	margin:0 0 8px 0;
 }
 
