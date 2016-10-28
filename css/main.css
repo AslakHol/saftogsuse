@@ -1,3 +1,10 @@
+#header{
+
+}
+
+#footer{
+
+}
 
 /*---Navbar---*/
 #navbar ul {
@@ -34,4 +41,36 @@
 
 #navbar li a:hover{
 	color: #00cc66;
+}
+
+/*-- Boxes --*/
+body{
+	width: 100vh;
+	height: 100vh;
+}
+div.imgAndTextNextTo{
+	position: relative;
+	display: block;
+	width: 70%;
+	height: 20%;
+	left:0;
+}
+
+div.imgAndTextNextTo img{
+	position: absolute;
+	display: block;
+
+	margin: 0px;
+}
+
+div.imgAndTextNextTo p{
+	position: absolute;
+	display: block;
+	width: 50%;
+	right: 0;
+}
+
+
+div.imgAndTextBelow{
+
 }
