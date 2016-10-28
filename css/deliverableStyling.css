@@ -30,6 +30,9 @@ h2{
 h3{
 	font-family: helvetica ,verdana; /* Web-safe font */
 }
+img{
+	width: 100%;
+}
 #contents > h2 {
 	margin: 0px;
 	margin-bottom: 5px;
@@ -44,7 +47,7 @@ p{
 	font-size: 18px;
 	margin-left: 0px;
 }
-ul{
+ul,ol{
 	font-family: verdana;
 	line-height: 1.2em;
 	color: #363636;

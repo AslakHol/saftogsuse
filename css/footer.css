@@ -1,0 +1,19 @@
+/* Kan kopieres inn i main.css ved merge */
+div.footer{
+	color: #FFFFFF;
+	background-color: #000000;
+	width: calc(100% -20px);
+	bottom: -100px;
+	bottom: 0px;
+	margin: 0px;
+	left: 0px;
+	position: absolute;
+	padding: 20px;
+}
+div.footer > div{
+	top: 20px;
+	width: 15%;
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
