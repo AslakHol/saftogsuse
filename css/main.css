@@ -8,11 +8,13 @@ body, html{
 	width:100%;
 }
 
+/*--- Box styling ---*/
+
 #content{
 	min-height: 100%;
-	width: 100%;
+	width: calc(100% - 80px);
 	position:relative;
-	padding: 35px 20px;
+	padding: 35px 40px;
 }
 
 div.imgAndTextNextTo{
@@ -37,10 +39,7 @@ div.imgAndTextNextTo h2{
 	margin:0 0 8px 0;
 }
 
-
-
-
-/*--- Box styling
+/*--- Old Box styling
 div.imgAndTextNextTo{
 	position: relative;
 	display: block;
@@ -66,8 +65,9 @@ div.imgAndTextNextTo p{
 div.imgAndTextBelow{
 }
 ---*/
-/*--- Navbar styling ---*/
 
+
+/*--- Navbar styling ---*/
 
 #navbar ul {
 	list-style-type: none;
@@ -76,6 +76,7 @@ div.imgAndTextBelow{
 	overflow: hidden;
 	background-color: #eee;
 }
+
 #navbar li {
 	float: left;
 	font-family: "Lucida Sans Unicode";
@@ -101,10 +102,10 @@ div.imgAndTextBelow{
 	z-index: 999;
 }
 
-
 #navbar li a:hover{
 	color: #00cc66;
 }
+
 /*
 #header{
 	margin-bottom: 200px;
