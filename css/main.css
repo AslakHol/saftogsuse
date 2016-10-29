@@ -117,13 +117,31 @@ div.imgAndTextBelow{
 	font-size: 14px;
 }
 
+#navbar #fb_logo{
+	padding-top: 5px;
+	padding-right: 20px;;
+	float: right;
+	border-right: none;
+}
+
+#navbar #fb_logo a{
+	min-width: 0;
+	padding: 0;
+}
+
 #navbar li a{
 	display: block;
 	color: grey;
 	text-align: center;
-	padding: 14px 30px;
+	padding: 10px 0px;
+	min-width: 150px;
 	text-decoration: none;
 }
+
+#navbar li #logo{
+	padding: 0.5px 20px;
+}
+
 
 #navbar{
 	position: fixed;
@@ -136,6 +154,8 @@ div.imgAndTextBelow{
 #navbar li a:hover{
 	color: #00cc66;
 }
+
+
 
 /*
 #header{
