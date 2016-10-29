@@ -6,18 +6,23 @@
 		/*Positions for the elements in the scriptet applepress. Using embedded styling because the styling only applies to a few specific elements within only this HTML*/
 		
 		/*Some position-properties for these elements*/
-		.pressPopup{
-			position: relative; /*
-			/*visibility: hidden; */
-			width: 265px;
-			background-color: black;
-			color: white; 
-			display: block;
-			float: right;
-			border-radius: 12px;
-			margin-right: 40px;
-			padding: 5px;
-		}
+			#interactive_press{
+				width: 480px;
+				margin: auto;
+				position: relative;
+				align-content: center;
+			}
+			.pressPopup{
+				position: absolute; 
+				margin: auto;
+				display: block;
+				width: 265px;
+				background-color: black;
+				color: white; 
+				border-radius: 12px;
+				margin-right: 40px;
+				padding: 5px;
+			}
 			.pressPopup > input{
 				position: absolute;
 				top: 15px;
@@ -34,87 +39,61 @@
 			.pressPopup > h2{
 				margin: 5px;
 			}
-			#testDiv{
-				top: inherit +50px;
+			#bucket{
+				top:0px;
+				float: right;
+				right: -260px;
 			}
-			#testText{
-				top: 0px;
-				left: 0px;
-			}
-			#testText2{
-				top: 50px;
-				left: 30px;
+			#bucket2{
+				top:30px;
+				float: left;
+				left: -260px;
 			}
 		</style>
-		<link rel='stylesheet' href='css/main.css' type='text/css'>
+		<link rel='stylesheet' href='css/main.css'>
+		<meta charset="utf-8">
 	</head>
 	<body>
-	<!-- Header: -->
-	<!-- Kopiert inn midlertidig -->
+	<header id="header">
+	</header>
 	<!-- Tittel og ingress -->
-	<div>
- 		<h2>Eplepresser</h2> <!--h2 til videre-->
+	<div id="content">
+		<h1 id="heading">Eplepresser</h1> <!--h2 til videre-->
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas sollicitudin malesuada libero at vehicula. In vestibulum aliquet enim, sed sagittis magna convallis ac. Donec tincidunt auctor erat ac euismod. Vestibulum sed augue a purus aliquet interdum vitae id purus</p>
-	</div>
+		<p id="ingress">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas sollicitudin malesuada libero at vehicula. In vestibulum aliquet enim, sed sagittis magna convallis ac. Donec tincidunt auctor erat ac euismod. Vestibulum sed augue a purus aliquet interdum vitae id purus</p>
 
-		<!-- JS: Eplepresse -->
-		<!-- Bilde som stand-in til videre -->
-	<div id="interactive_press">
-		<!--Main image of the press:-->
-		<img src='img/Presser/JSStand-InApplePress.jpg' type='img/jpg' usemap="#pressComponent" >
-		
-		<!--Images of the text that appears. Later HTML div elements may be used -->
-		<!-- <img class="pressPopup" src='img/press_click_img/testText.gif' type="img/gif" id="testText" onclick="hideItem('testText','pressPopup')"/>
-		<img class="pressPopup" src='img/press_click_img/testText2.gif' type="img/gif" id="testText2" onclick="hideItem('testText2','pressPopup')"/> -->
-		<div class="pressPopup" id="testDiv">
-			<h2>Bucket</h2>
-			<input type="button" value="Close" onclick="hideItem('testDiv', 'pressPopup)">
-			<textarea disabled rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas</textarea>
+			<!-- JS: Eplepresse -->
+			<!-- Bilde som stand-in til videre -->
+		<div id="interactive_press">
+			<!--Main image of the press:-->
+			<img src='img/Presser/JSStand-InApplePress.jpg' type='img/jpg' usemap="#pressComponent" >
+
+			<div class="pressPopup" id="bucket">
+				<h2>Bucket</h2>
+				<input type="button" value="Close" onclick="hideItem('testDiv', 'pressPopup)">
+				<textarea disabled rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas</textarea>
+			</div>
+			<div class="pressPopup" id="bucket2">
+				<h2>Bucket 2</h2>
+				<input type="button" value="Close" onclick="hideItem('testDiv', 'pressPopup)">
+				<textarea disabled rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas</textarea>
+			</div>
+
+			<!--Image map of the parts of the press-->
+			<map name="pressComponent" id="testMap" >
+				<area shape="rect" coords="0,0,200,200" onclick="hideAllBut('testDiv')">
+				<area shape="rect" coords="200,0,480,480" onclick="hideAllBut('testText2')">
+			</map>
 		</div>
-		
-		<!--Image map of the parts of the press-->
-		<map name="pressComponent" id="testMap" >
-			<area shape="rect" coords="0,0,200,200" onclick="hideAllBut('testDiv')">
-			<area shape="rect" coords="200,0,480,480" onclick="hideAllBut('testText2')">
-		</map>
+
+			<!-- Typer eplepresser: (Kopert fra kinds of apples)-->
+		<div class="imgAndTextNextTo">
+			<img src="img/presser/" type="image/jpg"/>
+			<h3>Type of press</h3>
+			<p>Description</p>
 	</div>
-		
-		<!-- Typer eplepresser: (Kopert fra kinds of apples)-->
-	<div class="pressType">
-		<img src="img/presser/" type="image/jpg"/>
-		<h3>Type of press</h3>
-		<p>Description</p>
-	</div>
-		<div class="pressType">
-		<img src="img/presser/" type="image/jpg"/>
-		<h3>Type of press</h3>
-		<p>Description</p>
-	</div>
-		<div class="pressType">
-		<img src="img/presser/" type="image/jpg"/>
-		<h3>Type of press</h3>
-		<p>Description</p>
-	</div>
-		<div class="pressType">
-		<img src="img/presser/" type="image/jpg"/>
-		<h3>Type of press</h3>
-		<p>Description</p>
-	</div>
-		<div class="pressType">
-		<img src="img/presser/" type="image/jpg"/>
-		<h3>Type of press</h3>
-		<p>Description</p>
+	<footer id="footer"></footer>
+	<script src="scripts/add_header_footer.js"></script>
 	<script src="scripts/presses_click.js"></script>
-	<div id="navbar">
-		<ul>
-			<li><a href="#">Om oss</a></li>
-			<li><a href="#">Eplesorter</a></li>
-			<li><a href="#">Eplepresser</a></li>
-			<li><a href="#">Pressing</a></li>
-			<li><a href="#">Cider</a></li>
-			<li><a href="#">Kontakt oss</a></li>
-		</ul>
-	</div>
 	</body>
 </html>
