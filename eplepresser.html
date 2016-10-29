@@ -7,18 +7,18 @@
 		
 		/*Some position-properties for these elements*/
 		.pressPopup{
-			position: absolute;
-			visibility: hidden;
-			width: 280px;
+			position: relative; /*
+			/*visibility: hidden; */
+			width: 265px;
 			background-color: black;
 			color: white; 
-			display: inline-block;
+			display: block;
+			float: right;
 			border-radius: 12px;
-			margin: 10px;
-			padding: 10px;
+			margin-right: 40px;
+			padding: 5px;
 		}
 			.pressPopup > input{
-				display: inherit;
 				position: absolute;
 				top: 15px;
 				right: 15px;
@@ -51,16 +51,6 @@
 	<body>
 	<!-- Header: -->
 	<!-- Kopiert inn midlertidig -->
-	<div id="navbar">
-		<ul>
-			<li><a href="#">Om oss</a></li>
-			<li><a href="#">Eplesorter</a></li>
-			<li><a href="#">Eplepresser</a></li>
-			<li><a href="#">Pressing</a></li>
-			<li><a href="#">Cider</a></li>
-			<li><a href="#">Kontakt oss</a></li>
-		</ul>
-	</div>
 	<!-- Tittel og ingress -->
 	<div>
  		<h2>Eplepresser</h2> <!--h2 til videre-->
@@ -75,8 +65,8 @@
 		<img src='img/Presser/JSStand-InApplePress.jpg' type='img/jpg' usemap="#pressComponent" >
 		
 		<!--Images of the text that appears. Later HTML div elements may be used -->
-		<img class="pressPopup" src='img/press_click_img/testText.gif' type="img/gif" id="testText" onclick="hideItem('testText','pressPopup')"/>
-		<img class="pressPopup" src='img/press_click_img/testText2.gif' type="img/gif" id="testText2" onclick="hideItem('testText2','pressPopup')"/>
+		<!-- <img class="pressPopup" src='img/press_click_img/testText.gif' type="img/gif" id="testText" onclick="hideItem('testText','pressPopup')"/>
+		<img class="pressPopup" src='img/press_click_img/testText2.gif' type="img/gif" id="testText2" onclick="hideItem('testText2','pressPopup')"/> -->
 		<div class="pressPopup" id="testDiv">
 			<h2>Bucket</h2>
 			<input type="button" value="Close" onclick="hideItem('testDiv', 'pressPopup)">
@@ -116,5 +106,15 @@
 		<h3>Type of press</h3>
 		<p>Description</p>
 	<script src="scripts/presses_click.js"></script>
+	<div id="navbar">
+		<ul>
+			<li><a href="#">Om oss</a></li>
+			<li><a href="#">Eplesorter</a></li>
+			<li><a href="#">Eplepresser</a></li>
+			<li><a href="#">Pressing</a></li>
+			<li><a href="#">Cider</a></li>
+			<li><a href="#">Kontakt oss</a></li>
+		</ul>
+	</div>
 	</body>
 </html>
