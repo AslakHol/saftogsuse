@@ -3,12 +3,48 @@
 	<head>
 		<title>Presses</title>
 		<style>
-		#testText, #testText2{
+		/*Positions for the elements in the scriptet applepress. Using embedded styling because the styling only applies to a few specific elements within only this HTML*/
+		
+		/*Some position-properties for these elements*/
+		.pressPopup{
 			position: absolute;
-			top: 0px;
-			left: 0px;
 			visibility: hidden;
+			width: 280px;
+			background-color: black;
+			color: white; 
+			display: inline-block;
+			border-radius: 12px;
+			margin: 10px;
+			padding: 10px;
 		}
+			.pressPopup > input{
+				display: inherit;
+				position: absolute;
+				top: 15px;
+				right: 15px;
+			}
+			.pressPopup > textarea{
+				width: 260px;
+				min-height: 10px;
+				max-height: 240px;
+				resize: none;
+				font-family: inherit;
+				
+			}
+			.pressPopup > h2{
+				margin: 5px;
+			}
+			#testDiv{
+				top: inherit +50px;
+			}
+			#testText{
+				top: 0px;
+				left: 0px;
+			}
+			#testText2{
+				top: 50px;
+				left: 30px;
+			}
 		</style>
 		<link rel='stylesheet' href='css/main.css' type='text/css'>
 	</head>
@@ -35,13 +71,25 @@
 		<!-- JS: Eplepresse -->
 		<!-- Bilde som stand-in til videre -->
 	<div id="interactive_press">
+		<!--Main image of the press:-->
 		<img src='img/Presser/JSStand-InApplePress.jpg' type='img/jpg' usemap="#pressComponent" >
+		
+		<!--Images of the text that appears. Later HTML div elements may be used -->
 		<img class="pressPopup" src='img/press_click_img/testText.gif' type="img/gif" id="testText" onclick="hideItem('testText','pressPopup')"/>
-		<img class="pressPopup" src='img/press_click_img/testText.gif' type="img/gif" id="testText2" onclick="hideAllBut('testText2','pressPopup')" top=10px;/>
-		<map name="pressComponent" id="testMap" onclick="hideAllBut('testText')">
-			<area shape="rect" coords="0,0,400,400" >
+		<img class="pressPopup" src='img/press_click_img/testText2.gif' type="img/gif" id="testText2" onclick="hideItem('testText2','pressPopup')"/>
+		<div class="pressPopup" id="testDiv">
+			<h2>Bucket</h2>
+			<input type="button" value="Close" onclick="hideItem('testDiv', 'pressPopup)">
+			<textarea disabled rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas</textarea>
+		</div>
+		
+		<!--Image map of the parts of the press-->
+		<map name="pressComponent" id="testMap" >
+			<area shape="rect" coords="0,0,200,200" onclick="hideAllBut('testDiv')">
+			<area shape="rect" coords="200,0,480,480" onclick="hideAllBut('testText2')">
 		</map>
 	</div>
+		
 		<!-- Typer eplepresser: (Kopert fra kinds of apples)-->
 	<div class="pressType">
 		<img src="img/presser/" type="image/jpg"/>
