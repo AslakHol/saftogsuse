@@ -5,7 +5,7 @@
 		<style>
 		
 		/*Some position-properties for press_click-elements*/
-			#interactive_press{
+			.interactive_press{
 				width: 480px;
 				margin: auto;
 				position: relative;
@@ -17,9 +17,10 @@
 				margin: auto;
 				display: block;
 				width: 265px;
-				background-color: black;
-				color: white; 
+				background-color: #ddd;
 				border-radius: 12px;
+				/* border-style: solid;
+				border-width: 1px; */ 
 				margin-right: 40px;
 				padding: 5px;
 			}
@@ -27,13 +28,19 @@
 				position: absolute;
 				top: 15px;
 				right: 15px;
+				background-color: #aaa;
+				border-radius: 5px;
 			}
 			.pressPopup > textarea{
 				width: 260px;
 				min-height: 10px;
 				max-height: 240px;
 				resize: none;
+				background-color: inherit;
 				font-family: inherit;
+				font-size: inherit;
+				color: #000;
+				border: none;
 				
 			}
 			.pressPopup > h2{
@@ -54,9 +61,13 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
+	
+	<!-- Header element to be loaded by JS -->
 	<header id="header">
 	</header>
-	<!-- Tittel og ingress -->
+	
+	<!-- Title and introduction -->
+	<!-- Content wrapped into a content- div -->
 	<div id="content">
 		<h1 id="heading">Eplepresser</h1> <!--h2 til videre-->
 
@@ -64,13 +75,13 @@
 
 			<!-- JS: Eplepresse -->
 			<!-- Bilde som stand-in til videre -->
-		<div id="interactive_press">
+		<div class="interactive_press">
 			<!--Main image of the press:-->
 			<img src='img/Presser/JSStand-InApplePress.jpg' type='img/jpg' usemap="#pressComponent" >
 
 			<div class="pressPopup" id="bucket">
 				<h2>Bucket</h2>
-				<input type="button" value="Close" onclick="hideItem('bucket')">
+				<input type="button" value="X" onclick="hideItem('bucket')">
 				<textarea disabled rows="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas</textarea>
 			</div>
 			<div class="pressPopup" id="bucket2">
