@@ -227,6 +227,61 @@ div.footer{
 	padding: 20px;
 	text-align: center;
 }
-
-
 */
+
+/* form styling */ 
+
+/* Center form within the page */
+#contactForm {
+    margin:0 auto;
+    width: 495px;
+}
+
+/* style label */ 
+label {
+    display: block;
+    margin-top:20px;
+    letter-spacing: 2px;
+}
+/* style inputs and textarea */
+input, textarea {
+    width: 200px;
+    height: 25px;
+    padding: 10px;
+    margin-top: 3px;
+    border: 1px solid black;
+    font-size: 0.9em;
+    color: #3a3a3a;
+    /* rounded corners */ 
+    -moz-border-radius:5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 213px;
+    width: 400px;
+}
+
+/* blue line when input is selected */
+input:focus, textarea:focus {
+    border: 1px solid blue;
+}
+
+/* style submit button */
+#submit {
+    width: 100px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer; 
+    background-color: mediumspringgreen;
+    font-weight: 700;
+}
+
+/* change opacity when hover over submit button */
+#submit:hover {
+    opacity: .9;
+}
+
