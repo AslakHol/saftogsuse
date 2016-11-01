@@ -171,7 +171,23 @@ div.footer{
 	position: absolute;
 	padding: 20px;
 	text-align: center;
+}*/
+
+/*--- Slideshow styling ---*/
+ /*.slideshow_container{
+	 margin: auto;
+	 max-width: 1000px;
+	 position: relative;
+ }
+
+.prev, .next{
+	cursor:pointer;
+	position: absolute;
+	top:50%;
+	font-size: 20px;
+	padding: 16px;
 }
 
-
-*/
+.slides>img{
+	max-width: 100%;
+}*/
