@@ -1,3 +1,10 @@
+<!--
+FILE NAME: cider.html
+WRITTEN BY: Ine Lofthus Arnesen
+WHEN: November 2016
+PURPOSE: This page shows how to brew cider.
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,7 +50,8 @@
 		</div>
 
 		<div class="imgAndTextNextTo appleType">
-			<div><img src="img/Cider/gjære.jpg" type="image/jpg" height="200" width="200"/></div>
+			<img src="img/Cider/gjaere_liten.jpg" type="image/jpg" 
+				onclick="showImage(this.src, 'img/Cider/gjaere.jpg');"/>
 			<div class="textBox">
 				<h2>Steg 5: Gjære</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget cursus dolor. Nullam lacinia euismod lectus nec dignissim. Sed mollis metus ut dolor eleifend elementum. Sed pretium augue a libero malesuada, vitae faucibus velit maximus. Vestibulum blandit tristique augue, nec posuere ipsum sollicitudin facilisis. Proin et ante turpis. Nulla ex metus, vulputate tristique tempor et, porttitor in metus. Ut a malesuada neque.</p>
@@ -57,9 +65,16 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget cursus dolor. Nullam lacinia euismod lectus nec dignissim. Sed mollis metus ut dolor eleifend elementum. Sed pretium augue a libero malesuada, vitae faucibus velit maximus. Vestibulum blandit tristique augue, nec posuere ipsum sollicitudin facilisis. Proin et ante turpis. Nulla ex metus, vulputate tristique tempor et, porttitor in metus. Ut a malesuada neque.</p>
 			</div>
 		</div>
+
+
+        <div id="largeImgPanel" onclick="this.style.display='none'">
+            <img id="largeImg" />
+        </div>
+
 	</div>
 	<div id="footer"></div>
 
 	<script src="scripts/add_header_footer.js"></script>
+	<script src="scripts/enlarge_image.js"></script>
 </body>
 </html>
