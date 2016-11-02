@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!-- 
+FILE NAME: kontakt.html
+
+WRITTEN BY: Astrid Vik
+
+WHEN: October 2015
+
+PURPOSE: contact page where users can send a message to Saft og Suse
+
+-->
+
+<html>
+<head>
+    <meta charset="utf-8"/>    
+    <title>Kontaktskjema</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+    <header id="header"></header>
+    <div id="content">
+
+        <h1 id="heading">Kontakt oss</h1>
+        
+        <p id="ingress">Text goes here</p>
+        
+        <form name="contactForm" id="contactForm" onsubmit="return validateForm()">
+
+            <label>Navn</label>
+            <input id="name" name="navn" type="text" placeholder="Ditt navn">
+
+            <label>Email</label>
+            <input id="email" name="email" type="email" placeholder="Din e-mail">
+
+            <label>Melding</label>
+            <textarea id="message" name="melding" placeholder="Skriv din melding her..."></textarea>
+
+            <input id="submit" name="submit" type="submit" value="Send">
+
+        </form>
+    </div>
+    <footer id="footer"></footer>
+    <script src="scripts/kontakt.js"></script>
+   <script src="scripts/add_header_footer"></script>
+</body>
+</html>
