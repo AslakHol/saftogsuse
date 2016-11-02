@@ -275,6 +275,10 @@ input:focus, textarea:focus {
     opacity: .9;
 }
 
+.expandableImg:hover{
+	cursor:pointer;
+}
+
 
 #largeImgPanel {
     text-align: center;
@@ -288,5 +292,5 @@ input:focus, textarea:focus {
 #largeImg {
 	display: none;
 	height:80%; 
-	margin: 5px;
+	margin: 5%;
 }
