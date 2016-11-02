@@ -3,14 +3,22 @@ const ctx = canvas.getContext("2d")
 const imgElement = document.createElement("img")
 const imgPaths = ["img/slides/slide_1.JPG", "img/slides/slide_2.JPG", "img/slides/slide_3.JPG", "img/slides/slide_4.JPG"]
 
+// Config for fading
+const fadeTimeStep = 5
+const fadeOpacityStep = 0.01
+const timeBetweenImage = 5000
+ctx.fillStyle = "white"
+
+let fadeOutIntervalID = 0
+let fadeInIntervalID = 0
 let opacity = 1.0
 let firstImage = true
 let slideIndex = 0
 
-if (imgElement){
+if (imgElement){ // Setup
   imgElement.setAttribute('src', imgPaths[slideIndex])
   imgElement.setAttribute("onload", "nextStep()")
-  setInterval(nextStep, 5000)
+  setInterval(nextStep, timeBetweenImage)
 }
 
 function nextStep(){
@@ -20,12 +28,7 @@ function nextStep(){
   }
 
   else if (opacity === 1.0){
-    fadeOut()
-  }
-
-  else{
-    console.log("The script now wants to call switchImage")
-    // switchImage()
+    fadeOutIntervalID = setInterval(fadeOut, fadeTimeStep)
   }
 }
 
@@ -35,21 +38,36 @@ function switchImage(){
     slideIndex = 0
   }
   imgElement.setAttribute('src', imgPaths[slideIndex])
-  fadeIn()
+  fadeInIntervalID = setInterval(fadeIn, fadeTimeStep)
 }
 
-function fadeOut(){
-
-  opacity -= 0.1
+function fadeStep(opacity){
+  ctx.globalAlpha = 1
   ctx.rect(0,0,700,525)
-  ctx.fillStyle = "white"
   ctx.fill()
   ctx.globalAlpha = opacity
   ctx.drawImage(imgElement, 0, 0, 700, 525)
+}
 
-  console.log("fading to opacity: "+ opacity)
+function fadeOut(){
+  opacity -= fadeOpacityStep
+  if (opacity < 0.1){ // catches any floating point errors.
+    opacity = 0.0
+  }
+  fadeStep(opacity)
+  if (opacity === 0.0){
+    clearInterval(fadeOutIntervalID)
+    switchImage()
+  }
 }
 
 function fadeIn(){
-  console.log("we're fading in")
+  opacity += fadeOpacityStep
+  if (opacity > 0.9){
+    opacity = 1.0
+  }
+  fadeStep(opacity)
+  if (opacity === 1.0){
+    clearInterval(fadeInIntervalID)
+  }
 }
