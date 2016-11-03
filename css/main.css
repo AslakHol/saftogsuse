@@ -33,6 +33,14 @@ p, footer{
 	font-size: 0.8em;
 }
 
+#aboutLogo{
+	display: block;
+	height: 300px;
+	width: 300px;
+	margin: 40px auto 0 auto;
+
+}
+
 /*--- Box styling ---*/
 
 #content{
@@ -68,6 +76,15 @@ p, footer{
 
 .imgAndTextNextTo h2{
 	margin:0 0 0 0;
+}
+
+.imgAndTextBelow{
+
+}
+
+.imgAndTextBelow img{
+	height: 200px;
+	width: 200px;
 }
 
 /*--- Old Box styling
