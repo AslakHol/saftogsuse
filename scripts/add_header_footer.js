@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 			+	"<li><a href='eplepresser.html'>Eplepresser</a></li>"
 			+	"<li><a href='pressing.html'>Pressing</a></li>"
 			+	"<li><a href='cider.html'>Cider</a></li>"
-			+	"<li><a href='kontakt_oss'>Kontakt oss</a></li>"
+			+	"<li><a href='kontakt.html'>Kontakt oss</a></li>"
 			+	'<li id="fb_logo"><a id="fblink" href="https://www.facebook.com/groups/482042088611960/?fref=ts"><img src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" onmouseover=this.src="img/_f_logo_online/png/FB-f-Logo__blue_29.png" onmouseout=this.src=src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" type="image/png"/></a></li>'
 		+	"</ul>"
 	+	"</div>"
