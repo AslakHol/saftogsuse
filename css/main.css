@@ -35,10 +35,8 @@ p, footer{
 
 #aboutLogo{
 	display: block;
-	height: 300px;
-	width: 300px;
 	margin: 40px auto 0 auto;
-
+    align-content: center;
 }
 
 /*--- Box styling ---*/
@@ -78,9 +76,25 @@ p, footer{
 	margin:0 0 0 0;
 }
 
-.imgAndTextBelow{
-
+#parent {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
 }
+
+.imgAndTextBelow p{
+    width: 250px; 
+    text-align: left;
+    display: inline-block;
+}
+
+.imgAndTextBelow {
+    display: inline-block;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
 
 .imgAndTextBelow img{
 	height: 200px;
@@ -300,7 +314,7 @@ input:focus, textarea:focus {
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
-    background-color: mediumspringgreen;
+    background-color: #00cc66;
     font-weight: 700;
 }
 
