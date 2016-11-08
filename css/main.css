@@ -76,6 +76,11 @@ p, footer{
 	margin:0 0 0 0;
 }
 
+
+.roundImage img{
+	border-radius: 50%;
+}
+
 #parent {
     text-align: center;
     margin-right: auto;
@@ -84,7 +89,7 @@ p, footer{
 }
 
 .imgAndTextBelow p{
-    width: 250px; 
+    width: 250px;
     text-align: left;
     display: inline-block;
 }
@@ -100,33 +105,6 @@ p, footer{
 	height: 200px;
 	width: 200px;
 }
-
-/*--- Old Box styling
-div.imgAndTextNextTo{
-	position: relative;
-	display: block;
-	width: 70%;
-	height: 20%;
-	left:0;
-}
-
-div.imgAndTextNextTo img{
-	position: absolute;
-	display: block;
-
-	margin: 0px;
-}
-
-div.imgAndTextNextTo p{
-	position: absolute;
-	display: block;
-	width: 50%;
-	right: 0;
-}
-
-div.imgAndTextBelow{
-}
----*/
 
 /*--- eplepresser.html/press_click.js styling --*/
 .interactive_press{
@@ -244,11 +222,6 @@ div.imgAndTextBelow{
 	color: #00cc66;
 }
 
-/*
-#header{
-	margin-bottom: 200px;
-}
-*/
 /*--- footer styling ---*/
 
 #footer{
@@ -321,4 +294,26 @@ input:focus, textarea:focus {
 /* change opacity when hover over submit button */
 #submit:hover {
     opacity: .9;
+}
+
+
+/*--- Expanded image styling ---*/
+.expandableImg:hover{
+	cursor:pointer;
+}
+
+
+#largeImgPanel {
+    text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(100,100,100, 0.5);
+}
+
+#largeImg {
+	display: none;
+	height:80%;
+	margin: 5%;
 }
