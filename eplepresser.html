@@ -24,7 +24,7 @@
 		<!-- Bilde som stand-in til videre -->
 		<div class="interactive_press">
 			<!--Main image of the press:-->
-			<img src='img/Presser/JSStand-InApplePress.jpg' type='img/jpg' usemap="#pressComponent" >
+			<img src='img/Presser/JSPress.jpg' type='img/jpg' usemap="#pressComponent" >
 			
 			<!-- div-elements to appear when end-user clicks a part of the press-->
 			<div class="pressPopup" id="bucket">
@@ -32,9 +32,24 @@
 				<input type="button" value="X" onclick="hideItem('bucket')">
 				<textarea disabled rows="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas</textarea>
 			</div>
-			<div class="pressPopup" id="bucket2">
-				<h2>Bøtte 2</h2>
-				<input type="button" value="Close" onclick="hideItem('bucket2')">
+			<div class="pressPopup" id="kar">
+				<h2>Kar</h2>
+				<input type="button" value="X" onclick="hideItem('kar')">
+				<textarea disabled rows="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas</textarea>
+			</div>
+			<div class="pressPopup" id="pressplater">
+				<h2>Pressplater</h2>
+				<input type="button" value="X" onclick="hideItem('pressplater')">
+				<textarea disabled rows="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas</textarea>
+			</div>
+			<div class="pressPopup" id="jekk">
+				<h2>Jekk med planker</h2>
+				<input type="button" value="X" onclick="hideItem('jekk')">
+				<textarea disabled rows="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas</textarea>
+			</div>
+			<div class="pressPopup" id="eplepresse">
+				<h2>Eplepresse</h2>
+				<input type="button" value="X" onclick="hideItem('eplepresse')">
 				<textarea disabled rows="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. Fusce venenatis lorem sed tincidunt venenatis. Pellentesque efficitur vel lorem vitae vestibulum. Pellentesque vehicula condimentum risus, eu ultricies lacus efficitur nec. Maecenas</textarea>
 			</div>
 
@@ -42,8 +57,19 @@
 			<map name="pressComponent" id="testMap" >
 				<!-- Areas are different components of the press. 
 				hideAllBut(element-name, element-class) hides all the elements of the same class and shows the element with the name 'element'-name -->
-				<area shape="rect" coords="0,0,200,200" onclick="hideAllBut('bucket', 'pressPopup')">
-				<area shape="rect" coords="200,0,480,480" onclick="hideAllBut('bucket2','pressPopup')">
+				<area shape="poly" coords="103,56,178,176,176,636,392,580,392,184,175,175,103,56,484,106,420,532,500,574,100,635" 
+				onclick="hideAllBut('eplepresse', 'pressPopup')">
+				
+				<area shape="rect" coords="240,630,390,790" 
+				onclick="hideAllBut('bucket', 'pressPopup')">
+				
+				<area shape="rect" coords="168,340,400,530" 
+				onclick="hideAllBut('pressplater', 'pressPopup')">
+				
+				<area shape="rect" coords="195,175,375,365" 
+				onclick="hideAllBut('jekk', 'pressPopup')">
+				
+				<area shape="rect" coords="172,506,422,592" onclick="hideAllBut('kar','pressPopup')">
 			</map>
 		</div>
 		<!-- End of interactive apple-press -->
