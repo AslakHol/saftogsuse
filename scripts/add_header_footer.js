@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 	+	"</div>"
 	+"<img src='img/banner.jpg' type='image/jpg' id='banner'>"
 	const footer = document.getElementById("footer")
-	footer.innerHTML = "<div class=logo><p>Saft og suse</p></div>"
+	footer.innerHTML = "<div class=logo><img src='img/logo_footer.png' alt='logo' id='aboutLogo'/></div>"
 		+"<div class='footer_text'>"
 			+"<h3>About us</h3>"
 			+"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nibh ac felis facilisis aliquet vitae mattis erat. .</p>"
@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 		+"</div>"
 		+"<div class='footer_text'>"
 			+"<h3>Følg oss</h3>"
+			+'<a id="fblink" href="https://www.facebook.com/groups/482042088611960/?fref=ts"><img src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" onmouseover=this.src="img/_f_logo_online/png/FB-f-Logo__blue_29.png" onmouseout=this.src=src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" type="image/png"/></a>'
 		+"</div>"
 		+"<div class='footer_text'>"
 			+"<h3>Site Map</h3>"
