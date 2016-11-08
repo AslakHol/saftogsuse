@@ -81,7 +81,7 @@ p, footer{
 	border-radius: 50%;
 }
 
-#parent {
+#om_oss_container {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -106,7 +106,14 @@ p, footer{
 	width: 200px;
 }
 
-/*--- eplepresser.html/press_click.js styling --*/
+/*--- canvas styling ---*/
+#canvas_container{
+	margin: 80px auto;
+	display: block;
+	width: 700px;
+}
+
+/*--- eplepresser.html/press_click.js styling ---*/
 .interactive_press{
 	width: 480px;
 	margin: auto;

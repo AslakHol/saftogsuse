@@ -4,9 +4,9 @@ const imgElement = document.createElement("img")
 const imgPaths = ["img/slides/slide_1.JPG", "img/slides/slide_2.JPG", "img/slides/slide_3.JPG", "img/slides/slide_4.JPG"]
 
 // Config for fading
-const fadeTimeStep = 5
+const fadeTimeStep = 2
 const fadeOpacityStep = 0.01
-const timeBetweenImage = 5000
+const timeBetweenImage = 10000
 ctx.fillStyle = "white"
 
 let fadeOutIntervalID = 0
