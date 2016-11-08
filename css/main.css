@@ -58,8 +58,8 @@ p, footer{
 
 .imgAndTextNextTo img{
 	position: absolute;
-	width: 150px;
-	height: 150px;
+	max-width: 200px;
+	max-height: 150px;
 }
 
 .imgAndTextNextTo .textBox{
