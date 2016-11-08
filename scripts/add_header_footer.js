@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 	const header = document.getElementById("header")
 	header.innerHTML = "<div id='navbar'>"
 		+	"<ul>"
-			+	'<li><img id="logo" src="img/logo_60x34.png" type="image/png"/></li>'
+			+	'<li><a href="index.html"><img id="logo" src="img/logo_60x34.png" type="image/png"/></a></li>'
 			+	"<li><a href='om_oss.html'>Om oss</a></li>"
 			+	"<li><a href='eplesorter.html'>Eplesorter</a></li>"
 			+	"<li><a href='eplepresser.html'>Eplepresser</a></li>"
