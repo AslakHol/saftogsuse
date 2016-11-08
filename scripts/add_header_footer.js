@@ -33,4 +33,3 @@ document.addEventListener("DOMContentLoaded",function(e){
 			+"<a>Click here for sitemap</a>"
 		+"</div>"
 })
-
