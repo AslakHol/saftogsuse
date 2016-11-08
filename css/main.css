@@ -237,9 +237,9 @@ p, footer{
 
 #footer{
 	width: 100%;
-	color:white;
-	background-color: black;
-	height: 200px;
+	color: grey;
+	background-color: #eee;
+	height: 175px;
 	margin: 80px 0 0 0;
 	z-index: 999;
 }
@@ -250,9 +250,13 @@ p, footer{
 	margin: 0px 2%;
 }
 
+#footer div a{
+	text-decoration: none;
+	color: #00cc66;
+}
+
 /* form styling */
 
-/* Center form within the page */
 #contactForm {
     margin:0 auto;
     width: 495px;
