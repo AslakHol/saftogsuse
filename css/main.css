@@ -1,5 +1,3 @@
-/* This comment is here because Ine messed up. Aslak to the rescue!*/
-
 body, html{
 	width: 100%;
 	height: 100%;
@@ -35,6 +33,12 @@ p, footer{
 	font-size: 0.8em;
 }
 
+#aboutLogo{
+	display: block;
+	margin: 40px auto 0 auto;
+    align-content: center;
+}
+
 /*--- Box styling ---*/
 
 #content{
@@ -54,8 +58,8 @@ p, footer{
 
 .imgAndTextNextTo img{
 	position: absolute;
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 }
 
 .imgAndTextNextTo .textBox{
@@ -72,85 +76,94 @@ p, footer{
 	margin:0 0 0 0;
 }
 
-/*--- Old Box styling
-div.imgAndTextNextTo{
-	position: relative;
-	display: block;
-	width: 70%;
-	height: 20%;
-	left:0;
+
+.roundImage img{
+	border-radius: 50%;
 }
 
-div.imgAndTextNextTo img{
-	position: absolute;
-	display: block;
-
-	margin: 0px;
+#parent {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
 }
 
-div.imgAndTextNextTo p{
-	position: absolute;
-	display: block;
-	width: 50%;
-	right: 0;
+.imgAndTextBelow p{
+    width: 250px;
+    text-align: left;
+    display: inline-block;
 }
 
-div.imgAndTextBelow{
+.imgAndTextBelow {
+    display: inline-block;
+    margin-right: 70px;
+    margin-left: 70px;
 }
----*/
+
+
+.imgAndTextBelow img{
+	height: 200px;
+	width: 200px;
+}
 
 /*--- eplepresser.html/press_click.js styling --*/
 .interactive_press{
-				width: 480px;
-				margin: auto;
-				position: relative;
-				align-content: center;
-			}
-			.pressPopup{
-				visibility: hidden;
-				position: absolute; 
-				margin: auto;
-				display: block;
-				width: 265px;
-				background-color: #ddd;
-				border-radius: 12px;
-				/* border-style: solid;
-				border-width: 1px; */ 
-				margin-right: 40px;
-				padding: 5px;
-			}
-			.pressPopup > input{
-				position: absolute;
-				top: 15px;
-				right: 15px;
-				background-color: #aaa;
-				border-radius: 5px;
-			}
-			.pressPopup > textarea{
-				width: 260px;
-				min-height: 10px;
-				max-height: 240px;
-				resize: none;
-				background-color: inherit;
-				font-family: inherit;
-				font-size: inherit;
-				color: #000;
-				border: none;
-				
-			}
-			.pressPopup > h2{
-				margin: 5px;
-			}
-			#bucket{
-				top:0px;
-				float: right;
-				right: -260px;
-			}
-			#bucket2{
-				top:30px;
-				float: left;
-				left: -260px;
-			}
+	width: 480px;
+	margin: auto;
+	position: relative;
+	align-content: center;
+}
+
+.pressPopup{
+	visibility: hidden;
+	position: absolute;
+	margin: auto;
+	display: block;
+	width: 265px;
+	background-color: #ddd;
+	border-radius: 12px;
+	/* border-style: solid;
+	border-width: 1px; */
+	margin-right: 40px;
+	padding: 5px;
+}
+
+.pressPopup > input{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background-color: #aaa;
+	border-radius: 5px;
+}
+
+.pressPopup > textarea{
+	width: 260px;
+	min-height: 10px;
+	max-height: 240px;
+	resize: none;
+	background-color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	color: #000;
+	border: none;
+
+}
+
+.pressPopup > h2{
+	margin: 5px;
+}
+
+#bucket{
+	top:0px;
+	float: right;
+	right: -260px;
+}
+
+#bucket2{
+	top:30px;
+	float: left;
+	left: -260px;
+}
 /*-- End of eplepresser.html-styling --*/
 
 /*--- Navbar styling ---*/
@@ -172,12 +185,29 @@ div.imgAndTextBelow{
 	font-size: 14px;
 }
 
+#navbar #fb_logo{
+	padding-top: 5px;
+	padding-right: 20px;;
+	float: right;
+	border-right: none;
+}
+
+#navbar #fb_logo a{
+	min-width: 0;
+	padding: 0;
+}
+
 #navbar li a{
 	display: block;
 	color: grey;
 	text-align: center;
-	padding: 14px 30px;
+	padding: 10px 0px;
+	min-width: 150px;
 	text-decoration: none;
+}
+
+#navbar li #logo{
+	padding: 0.5px 20px;
 }
 
 #navbar{
@@ -192,11 +222,6 @@ div.imgAndTextBelow{
 	color: #00cc66;
 }
 
-/*
-#header{
-	margin-bottom: 200px;
-}
-*/
 /*--- footer styling ---*/
 
 #footer{
@@ -214,19 +239,81 @@ div.imgAndTextBelow{
 	margin: 0px 2%;
 }
 
-/*
-div.footer{
-	color: white;
-	height: 25%;
-	background-color: black;
-	width: calc(100% - 20px);
-	bottom: 0px;
-	margin: 0px;
-	left: 0px;
-	position: absolute;
-	padding: 20px;
-	text-align: center;
+/* form styling */
+
+/* Center form within the page */
+#contactForm {
+    margin:0 auto;
+    width: 495px;
+}
+
+/* style label */
+label {
+    display: block;
+    margin-top:20px;
+    letter-spacing: 2px;
+}
+
+/* style inputs and textarea */
+input, textarea {
+    width: 200px;
+    height: 25px;
+    padding: 10px;
+    margin-top: 3px;
+    border: 1px solid black;
+    font-size: 0.9em;
+    color: #3a3a3a;
+    /* rounded corners */
+    -moz-border-radius:5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 213px;
+    width: 400px;
+}
+
+/* blue line when input is selected */
+input:focus, textarea:focus {
+    border: 1px solid blue;
+}
+
+/* style submit button */
+#submit {
+    width: 100px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #00cc66;
+    font-weight: 700;
+}
+
+/* change opacity when hover over submit button */
+#submit:hover {
+    opacity: .9;
 }
 
 
-*/
+/*--- Expanded image styling ---*/
+.expandableImg:hover{
+	cursor:pointer;
+}
+
+
+#largeImgPanel {
+    text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(100,100,100, 0.5);
+}
+
+#largeImg {
+	display: none;
+	height:80%;
+	margin: 5%;
+}
