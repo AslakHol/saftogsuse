@@ -31,6 +31,6 @@ document.addEventListener("DOMContentLoaded",function(e){
 		+"</div>"
 		+"<div class='footer_text'>"
 			+"<h3>Sideoversikt</h3>"
-			+"<p>Klikk <a href='sitemap.html'>her</a> for sideoversikt</p>"
+			+"<p>Klikk <a href='site_map.html'>her</a> for sideoversikt</p>"
 		+"</div>"
 })

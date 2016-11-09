@@ -1,3 +1,14 @@
+/*
+FILE NAME: main.css
+WRITTEN BY: Ine Lofthus Arnesen, Zawadi Berg Svela, Jonas Giske and Aslak Hollund
+MANAGED BY: Aslak Hollund
+WHEN: November 2016
+PURPOSE: This is the main stylesheet for saftogsuse.no it drives the layout for
+all pages except index.html.
+
+Comments throughout the document designate sections for ease of reading.
+*/
+
 body, html{
 	width: 100%;
 	height: 100%;
