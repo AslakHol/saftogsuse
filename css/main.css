@@ -76,7 +76,6 @@ p, footer{
 	margin:0 0 0 0;
 }
 
-
 .roundImage img{
 	border-radius: 50%;
 }
@@ -100,7 +99,6 @@ p, footer{
     margin-right: 70px;
     margin-left: 70px;
 }
-
 
 .imgAndTextBelow img{
 	height: 200px;
@@ -196,14 +194,14 @@ p, footer{
 	font-size: 14px;
 }
 
-#navbar #fb_logo{
+#navbar #header_fb_logo{
 	padding-top: 5px;
-	padding-right: 20px;;
+	padding-right: 20px;
 	float: right;
 	border-right: none;
 }
 
-#navbar #fb_logo a{
+#navbar #header_fb_logo a{
 	min-width: 0;
 	padding: 0;
 }
@@ -217,8 +215,14 @@ p, footer{
 	text-decoration: none;
 }
 
-#navbar li #logo{
+#navbar #header_logo img{
 	padding: 0.5px 20px;
+}
+
+#navbar #header_logo a{
+	padding-top: 5px;
+	padding-bottom: 0px;
+
 }
 
 #navbar{
