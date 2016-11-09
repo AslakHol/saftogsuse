@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 			+	"<li><a class='header_text_link' href='pressing.html'>Pressing</a></li>"
 			+	"<li><a class='header_text_link' href='cider.html'>Cider</a></li>"
 			+	"<li><a class='header_text_link' href='kontakt.html'>Kontakt oss</a></li>"
-			+	'<li id="header_fb_logo"><a href="https://www.facebook.com/groups/482042088611960/?fref=ts"><img src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" onmouseover=this.src="img/_f_logo_online/png/FB-f-Logo__blue_29.png" onmouseout=this.src=src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" type="image/png"/></a></li>'
+			+	'<li id="header_fb_logo"><a href="https://www.facebook.com/groups/482042088611960/"><img src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" onmouseover=this.src="img/_f_logo_online/png/FB-f-Logo__blue_29.png" onmouseout=this.src=src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" type="image/png"/></a></li>'
 		+	"</ul>"
 	+	"</div>"
 	+"<img src='img/banner.jpg' type='image/jpg' id='banner'>"
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 		+"</div>"
 		+"<div class='footer_text'>"
 			+"<h3>Bli med i gruppen</h3>"
-			+'<a href="https://www.facebook.com/groups/482042088611960/?fref=ts"><img src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" onmouseover=this.src="img/_f_logo_online/png/FB-f-Logo__blue_29.png" onmouseout=this.src=src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" type="image/png"/></a>'
+			+'<a href="https://www.facebook.com/groups/482042088611960/"><img src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" onmouseover=this.src="img/_f_logo_online/png/FB-f-Logo__blue_29.png" onmouseout=this.src=src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" type="image/png"/></a>'
 		+"</div>"
 		+"<div class='footer_text'>"
 			+"<h3>Sideoversikt</h3>"
