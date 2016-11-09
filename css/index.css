@@ -1,3 +1,11 @@
+/*
+FILE NAME: index.css
+WRITTEN BY: Aslak Hollund
+WHEN: November 2016
+Purpose: This is the stylesheet for the index page. The index page has a seperate
+stylesheet since it's radically different in design from the rest of the website.
+*/
+
 body{
     position:relative;
     margin: 0px;

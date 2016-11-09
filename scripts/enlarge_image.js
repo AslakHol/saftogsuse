@@ -10,13 +10,14 @@ from http://alexapps.net/enlarge-thumbnail-image-mouse-click
 
 
 function showImage(smSrc, lgSrc) {
-    showLargeImagePanel();
-    const largeImage = document.getElementById('largeImg');
+    var largeImage = document.getElementById('largeImg');
     largeImage.src = lgSrc;
+    unselectAll();
+    showLargeImagePanel();
     setTimeout(function() {                         /*Delays displaying the large image by 50ms the first time, */
         largeImage.style.display = 'inline-block';  /*in order to give it (some) time to load */               
-    }, 50);
-    unselectAll();
+    }, 10);
+
 }
 
 function showLargeImagePanel() {
