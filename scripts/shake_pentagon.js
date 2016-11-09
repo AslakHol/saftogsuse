@@ -5,12 +5,12 @@ It is meant as an easter egg in addition to the mandatory javascripts.
 */
 
 const pentagon = document.getElementById('logo').firstElementChild
-pentagon.addEventListener('mouseover',e=>{
+pentagon.addEventListener('mouseover',(e) => {
 	shake(pentagon)
 })
 function shake(pentagon){
 	let count = 0
-	let shake = setInterval(()=>{
+	let shake = setInterval(() => {
 		let up
 		if(count == 40){
 			clearInterval(shake)

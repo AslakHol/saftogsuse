@@ -203,7 +203,7 @@ p, footer{
 	border-right: none;
 }
 
-#navbar #fb_logo a{
+#navbar #fb_logo a,#navbar #index_link{
 	min-width: 0;
 	padding: 0;
 }
