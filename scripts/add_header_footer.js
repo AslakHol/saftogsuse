@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 	const footer = document.getElementById("footer")
 	footer.innerHTML = "<div><img src='img/logo_footer.png' alt='logo' id='aboutLogo'/></div>"
 		+"<div class='footer_text'>"
-			+"<h3>Siden er utviklet av</h3>"
+			+"<h3>Siden er utviklet av:</h3>"
 			+"<p>Ine Lofthus Arnesen, Jonas Giske, Zawadi Berg Svela, Astrid Vik og Aslak Hollund</p>"
 		+"</div>"
 		+"<div class='footer_text'>"
