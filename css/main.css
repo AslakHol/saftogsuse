@@ -211,8 +211,11 @@ p, footer{
 	color: grey;
 	text-align: center;
 	padding: 10px 0px;
-	min-width: 150px;
 	text-decoration: none;
+}
+
+#navbar .header_text_link{
+	min-width: 150px;
 }
 
 #navbar #header_logo img{
@@ -220,9 +223,9 @@ p, footer{
 }
 
 #navbar #header_logo a{
+	width: 100px;
 	padding: 0px;
-	margin: 0px;
-
+	padding-bottom: 1px;
 }
 
 #navbar{
