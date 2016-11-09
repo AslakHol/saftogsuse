@@ -1,12 +1,21 @@
+/*
+FILE NAME: slideshow.js
+WRITTEN BY: Aslak Hollund
+WHEN: November 2016
+PURPOSE: This is a slideshow that displays pictures taken by saft og suse.
+
+Under the section "Config for fading" values can be changed to alter the details of how slides are faded.
+*/
+
 const canvas = document.getElementById("canvas")
 const ctx = canvas.getContext("2d")
 const imgElement = document.createElement("img")
 const imgPaths = ["img/slides/slide_1.JPG", "img/slides/slide_2.JPG", "img/slides/slide_3.JPG", "img/slides/slide_4.JPG"]
 
 // Config for fading
-const fadeTimeStep = 2
+const fadeTimeStep = 1
 const fadeOpacityStep = 0.01
-const timeBetweenImage = 10000
+const timeBetweenImage = 5000
 ctx.fillStyle = "white"
 
 let fadeOutIntervalID = 0

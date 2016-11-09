@@ -1,4 +1,10 @@
+/*
+FILE NAME: add_header_footer.js
+WRITTEN BY: Ine Lofthus Arnesen
+WHEN: November 2016
+PURPOSE: This script creates the HTML for our header and footer.
 
+*/
 
 document.addEventListener("DOMContentLoaded",function(e){
 	const header = document.getElementById("header")
