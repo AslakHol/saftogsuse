@@ -35,7 +35,7 @@ h2{
 	font-weight: normal;
 }
 
-p, footer{
+p, footer, textarea, input{
 	font-family: Verdana, Geneva, sans-serif;
 }
 
