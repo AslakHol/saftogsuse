@@ -43,6 +43,8 @@ p, footer{
 	margin: 15px auto 120px auto;
 	font-family: "Lucida Grande", sans-serif;
 	font-size: 1em;
+	color: grey;
+
 }
 
 #aboutLogo{
@@ -279,7 +281,7 @@ p, footer{
 /* form styling */
 
 #contactForm {
-    margin:0 auto;
+    margin: -50px auto 0 auto;
     width: 495px;
 }
 
