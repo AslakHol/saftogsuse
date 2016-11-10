@@ -18,11 +18,11 @@ const fadeOpacityStep = 0.01
 const timeBetweenImage = 5000
 ctx.fillStyle = "white"
 
-let fadeOutIntervalID = 0
-let fadeInIntervalID = 0
-let opacity = 1.0
-let firstImage = true
-let slideIndex = 0
+var fadeOutIntervalID = 0 //Turns out let is not supported in safari < v. 10, so thats why I use var
+var fadeInIntervalID = 0
+var opacity = 1.0
+var firstImage = true
+var slideIndex = 0
 
 if (imgElement){ // Setup
   imgElement.setAttribute('src', imgPaths[slideIndex])
