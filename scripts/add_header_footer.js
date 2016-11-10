@@ -1,6 +1,6 @@
 /*
 FILE NAME: add_header_footer.js
-WRITTEN BY: Ine Lofthus Arnesen
+WRITTEN BY: Zawadi Berg Svela
 WHEN: November 2016
 PURPOSE: This script creates the HTML for our header and footer.
 
