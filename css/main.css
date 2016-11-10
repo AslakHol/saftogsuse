@@ -137,6 +137,13 @@ p, footer, textarea, input{
 	align-content: center;
 }
 
+.interactive_press img{
+	height: 400px;
+	width: 210px;
+	display: block;
+	margin: -100px auto 0 auto;
+}
+
 .pressPopup{
 	visibility: hidden;
 	position: absolute;
