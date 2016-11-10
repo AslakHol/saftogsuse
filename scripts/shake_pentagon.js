@@ -9,7 +9,8 @@ It is meant as a funny easter egg in addition to the mandatory javascripts.
 
 // Config for shaking
 const number_of_shakes = 40
-const shake_amplitude_in_pixels = 1
+//Amplitude in pixels
+const shake_amplitude= 1
 const milliseconds_between_shakes = 0.5
 
 const pentagon = document.getElementById('logo').firstElementChild
@@ -20,6 +21,7 @@ function shake(pentagon){
 	let count = 0
 	let shake = setInterval(() => {
 		let up
+		//Stops the shaking after number_of_shakes times and resets the position
 		if(count == number_of_shakes){
 			clearInterval(shake)
 			pentagon.style.left = '50%'
@@ -28,8 +30,9 @@ function shake(pentagon){
 			count++
 			let upSign = Math.round(Math.random()*2)-1
 			let leftSign = Math.round(Math.random()*2)-1
-			pentagon.style.left = 50 + leftSign*shake_amplitude_in_pixels + '%'
-			pentagon.style.top = 50 + upSign*shake_amplitude_in_pixels + '%'
+			//Replaces the logo shakes_amplitude pixels away from it's original position
+			pentagon.style.left = 50 + leftSign*shake_amplitude + '%'
+			pentagon.style.top = 50 + upSign*shake_amplitude + '%'
 		}
 	},milliseconds_between_shakes)
 }
