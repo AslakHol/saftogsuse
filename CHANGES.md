@@ -19,4 +19,10 @@ been moved into a separate css folder.
 ## Fonts
 Some fonts and font sizes have changed after discussions with the client.
 
-Lucida Sans Unicode has been removed from h2, it was added by a mistake. 
+Lucida Sans Unicode has been removed from h2, it was added by a mistake.
+
+
+## Scripts
+We did not include add_header_footer.js in the original design, but after some
+deliberation we decided it would be a useful to keep the header and footer
+modular. 
