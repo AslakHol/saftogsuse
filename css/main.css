@@ -280,6 +280,15 @@ p, footer{
 	color: #00cc66;
 }
 
+.footer_text h3{
+	padding-top: 30px;
+	font-size: 14px;
+}
+
+.footer_text p{
+	font-size: 12px;
+}
+
 /* form styling */
 
 #contactForm {
