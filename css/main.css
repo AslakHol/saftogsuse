@@ -34,14 +34,15 @@ h2{
 }
 
 p, footer{
-	font-family: Georgia, serif;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 #ingress{
 	width:40%;
 	text-align: center;
 	margin: 15px auto 120px auto;
-	font-size: 0.8em;
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 1em;
 }
 
 #aboutLogo{
