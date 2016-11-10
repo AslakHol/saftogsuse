@@ -53,8 +53,7 @@ p, footer, textarea, input{
 }
 
 /*--- Box styling ---*/
-
-#content{
+main{
 	min-height: 100%;
 	width: calc(100% - 80px);
 	position:relative;
@@ -264,7 +263,7 @@ p, footer, textarea, input{
 
 /*--- footer styling ---*/
 
-#footer{
+footer{
 	width: 100%;
 	color: grey;
 	background-color: #eee;
@@ -273,13 +272,13 @@ p, footer, textarea, input{
 	z-index: 999;
 }
 
-#footer > div{
+footer > div{
 	width: 15%;
 	float: left;
 	margin: 0px 2%;
 }
 
-#footer div a{
+footer div a{
 	text-decoration: none;
 	color: #00cc66;
 }

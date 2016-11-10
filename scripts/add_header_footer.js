@@ -7,7 +7,7 @@ PURPOSE: This script creates the HTML for our header and footer.
 */
 
 document.addEventListener("DOMContentLoaded",function(e){
-	const header = document.getElementById("header")
+	const header = document.querySelector("header")
 	header.innerHTML = "<div id='navbar'>"
 		+	"<ul>"
 			+	"<li id='header_logo'><a href='index.html'><img src='img/logo_60x34.png' type='image/png'/></a></li>"
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 		+	"</ul>"
 	+	"</div>"
 	+"<img src='img/banner.jpg' type='image/jpg' id='banner'>"
-	const footer = document.getElementById("footer")
+	const footer = document.querySelector("footer")
 	footer.innerHTML = "<div><img src='img/logo_footer.png' alt='logo' id='aboutLogo'/></div>"
 		+"<div class='footer_text'>"
 			+"<h3>Siden er utviklet av:</h3>"
