@@ -282,11 +282,11 @@ p, footer{
 
 .footer_text h3{
 	padding-top: 30px;
-	font-size: 15px;
+	font-size: 0.9em;
 }
 
 .footer_text p{
-	font-size: 13px;
+	font-size: 0.8em;
 }
 
 /* form styling */
