@@ -26,13 +26,15 @@ was made by Aslak Hollund
 
       <div id="om_oss_container">
         <div class="imgAndTextBelow">
-          <img src="img/torborg_c.jpg" alt="Picture of Torborg" />
+          <img class="expandableImg" src="img/torborg_c.jpg" alt="Bilde av Torborg"
+            onclick="showImage(this.src, 'img/torborg.jpg');"/>
           <h2>Torborg Galteland <br> Pressesjef</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc nunc, blandit non sollicitudin ac, blandit id ligula. Praesent sit amet ante sapien. Donec feugiat dui eget tortor blandit, in convallis orci dictum. Aenean vitae diam auctor quam elementum fermentum. Mauris accumsan turpis nibh, sit amet varius diam condimentum quis. Donec id sagittis lorem. Cras a maximus sapien, sed pellentesque nulla. Suspendisse potenti. Curabitur sed dictum massa. Nulla ac sem id tortor consequat facilisis. Suspendisse potenti. Quisque eu dolor tempus, varius velit eget, mattis ligula.</p>
         </div>
 
         <div class="imgAndTextBelow">
-          <img src="img/stenersen_c.jpg" alt="Picture of Jorgen" />
+          <img class="expandableImg" src="img/stenersen_c.jpg" alt="Bilde av Jorgen"
+            onclick="showImage(this.src, 'img/stenersen.jpg');"/>
           <h2>Jørgen H.V. Stenersen <br> Presseattaché</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc nunc, blandit non sollicitudin ac, blandit id ligula. Praesent sit amet ante sapien. Donec feugiat dui eget tortor blandit, in convallis orci dictum. Aenean vitae diam auctor quam elementum fermentum. Mauris accumsan turpis nibh, sit amet varius diam condimentum quis. Donec id sagittis lorem. Cras a maximus sapien, sed pellentesque nulla. Suspendisse potenti. Curabitur sed dictum massa. Nulla ac sem id tortor consequat facilisis. Suspendisse potenti. Quisque eu dolor tempus, varius velit eget, mattis ligula.</p>
         </div>
@@ -42,9 +44,13 @@ was made by Aslak Hollund
         Your browser doesn't support canvas
         </canvas>
       </div>
+      <div id="largeImgPanel" onclick="this.style.display='none'">
+        <img id="largeImg" alt="Her kommer det et stort bilde hvis du trykker på et lite bilde" src="logo_60x34.png">
+      </div>
     </main>
     <footer></footer>
     <script src="scripts/add_header_footer.js"></script>
     <script src="scripts/slideshow.js"></script>
+    <script src="scripts/expand_image.js"></script>
   </body>
 </html>
