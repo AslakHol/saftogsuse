@@ -36,30 +36,12 @@ PURPOSE: contact page where users can send a message to Saft og Suse
         <label>Melding</label>
         <textarea id="message" name="melding" placeholder="Skriv din melding her..." required></textarea>
 
-        <input id="submit" name="submit" type="submit" value="Send">
+        <input id="submit" name="submit" type="submit" value="Send" onclick="autofillEmail()">
       </form>
 
     </main>
     <footer></footer>
     <script src="scripts/email_form.js"></script>
     <script src="scripts/add_header_footer.js"></script>
-    <script>
-        function autofillEmail() {
-          var name = document.getElementById("name").value;
-          var subject = document.getElementById("subject").value;
-          var message = document.getElementById("message").value;
-          var webmasterChoice = document.getElementById("webmaster");
-          if (webmasterChoice.checked){
-            var receiver = "webmaster@saftogsuse.no";
-          } else{
-            var receiver = "kontakt@saftogsuse.no";
-          }
-
-          var body = encodeURI(message)+"%0D%0A"+"%0D%0A"+encodeURI(name);
-
-          window.location.href='mailto:'+receiver+'?subject='+encodeURI(subject)+'&body='+body;
-        return false;
-        }
-  </script>
   </body>
 </html>
