@@ -14,13 +14,13 @@ const shake_amplitude= 1
 const milliseconds_between_shakes = 0.5
 
 const pentagon = document.getElementById('logo').firstElementChild
-pentagon.addEventListener('mouseover',(e) => {
+pentagon.addEventListener('mouseover',function(e){
 	shake(pentagon)
 })
 function shake(pentagon){
-	let count = 0
-	let shake = setInterval(() => {
-		let up
+	var count = 0
+	var shake = setInterval(function(){
+		var up
 		//Stops the shaking after number_of_shakes times and resets the position
 		if(count == number_of_shakes){
 			clearInterval(shake)
@@ -28,8 +28,8 @@ function shake(pentagon){
 			pentagon.style.top = '50%'
 		} else {
 			count++
-			let upSign = Math.round(Math.random()*2)-1
-			let leftSign = Math.round(Math.random()*2)-1
+			var upSign = Math.round(Math.random()*2)-1
+			var leftSign = Math.round(Math.random()*2)-1
 			//Replaces the logo shakes_amplitude pixels away from it's original position
 			pentagon.style.left = 50 + leftSign*shake_amplitude + '%'
 			pentagon.style.top = 50 + upSign*shake_amplitude + '%'
