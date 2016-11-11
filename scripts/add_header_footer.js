@@ -1,13 +1,13 @@
 /*
 FILE NAME: add_header_footer.js
-WRITTEN BY: Ine Lofthus Arnesen
+WRITTEN BY: Zawadi Berg Svela
 WHEN: November 2016
 PURPOSE: This script creates the HTML for our header and footer.
 
 */
 
 document.addEventListener("DOMContentLoaded",function(e){
-	const header = document.getElementById("header")
+	const header = document.querySelector("header")
 	header.innerHTML = "<div id='navbar'>"
 		+	"<ul>"
 			+	"<li id='header_logo'><a href='index.html'><img src='img/logo_60x34.png' type='image/png'/></a></li>"
@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded",function(e){
 			+	"<li><a class='header_text_link' href='pressing.html'>Pressing</a></li>"
 			+	"<li><a class='header_text_link' href='cider.html'>Cider</a></li>"
 			+	"<li><a class='header_text_link' href='kontakt.html'>Kontakt oss</a></li>"
-			+	'<li id="header_fb_logo"><a href="https://www.facebook.com/groups/482042088611960/"><img src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" onmouseover=this.src="img/_f_logo_online/png/FB-f-Logo__blue_29.png" onmouseout=this.src=src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" type="image/png"/></a></li>'
+			+	'<li id="header_fb_logo"><a href="https://www.facebook.com/groups/482042088611960/"><img src="img/fb_logo_g.png" onmouseover=this.src="img/fb_logo_b.png" onmouseout=this.src=src="img/fb_logo_g.png" type="image/png"/></a></li>'
 		+	"</ul>"
 	+	"</div>"
 	+"<img src='img/banner.jpg' type='image/jpg' id='banner'>"
-	const footer = document.getElementById("footer")
+	const footer = document.querySelector("footer")
 	footer.innerHTML = "<div><img src='img/logo_footer.png' alt='logo' id='aboutLogo'/></div>"
 		+"<div class='footer_text'>"
 			+"<h3>Siden er utviklet av:</h3>"
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 		+"</div>"
 		+"<div class='footer_text'>"
 			+"<h3>Bli med i gruppen</h3>"
-			+'<a href="https://www.facebook.com/groups/482042088611960/"><img src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" onmouseover=this.src="img/_f_logo_online/png/FB-f-Logo__blue_29.png" onmouseout=this.src=src="img/_f_logo_online/png/FB-f-Logo__grey_29.png" type="image/png"/></a>'
+			+'<a href="https://www.facebook.com/groups/482042088611960/"><img src="img/fb_logo_g.png" onmouseover=this.src="img/fb_logo_b.png" onmouseout=this.src=src="img/fb_logo_g.png" type="image/png"/></a>'
 		+"</div>"
 		+"<div class='footer_text'>"
 			+"<h3>Sideoversikt</h3>"
