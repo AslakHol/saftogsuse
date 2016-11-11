@@ -34,20 +34,69 @@ body{
     margin: -227px 0 0 -238px;
 }
 
-#nav{
-    background-color: rgba(0,0,0,0.75);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    font-size: 22pt;
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eee;
+    opacity: 0.9;
 }
 
-.nav_element{
-    display: inline-block;
-    color: white;
-    margin: 20px 3%;
+#navbar li {
+    float: left;
+    font-family: "Lucida Sans Unicode";
+    text-transform: uppercase;
+    font-weight: bold;
+    border-right: 1px inset #999;
+    font-size: 14px;
+}
+
+#navbar #header_fb_logo{
+    padding-top: 5px;
+    padding-right: 20px;
+    float: right;
+    border-right: none;
+}
+
+
+#navbar #header_fb_logo a{
+    min-width: 0;
+    padding: 0;
+}
+
+#navbar li a{
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+#navbar .header_text_link{
+    min-width: 150px;
+}
+
+#navbar #header_logo img{
+    padding: 0px;
+}
+
+#navbar #header_logo a{
+    width: 100px;
+    padding: 0px;
+    padding-bottom: 1px;
+}
+
+#navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#navbar li a:hover{
+    color: #00cc66;
 }
 
 a{
