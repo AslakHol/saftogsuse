@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded",function(e){
 		+"</div>"
 		+"<div class='footer_text'>"
 			+"<h3>Kontakt oss</h3>"
-			+"<p>Ta gjerne kontakt på kontakt@saftogsuse.no eller webmaster@saftogsuse.no</p>"
+			+"<p>For kontakt med webmaster eller Saft & Suse se <a href='kontakt.html'>kontaksskjemaet</a></p>"
 		+"</div>"
 		+"<div class='footer_text'>"
 			+"<h3>Bli med i gruppen</h3>"

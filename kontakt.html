@@ -23,6 +23,10 @@ PURPOSE: contact page where users can send a message to Saft og Suse
       <p id="ingress">Send oss gjerne en melding hvis du vil komme i kontakt med oss eller har noen spørsmål.</p>
 
       <form name="contactForm" id="contactForm" onsubmit="return autofillEmail()">
+        <label>Hvem vil du kontakte?</label>
+        <input id="webmaster" name="mottaker" type="radio" value="webmaster" required><span class="radioText">Webmaster</span>
+        <input id="saftogsuse" name="mottaker" type="radio" value="saftogsuse"> <span class="radioText">Saft & Suse</span>
+
         <label>Navn</label>
         <input id="name" name="navn" type="text" placeholder="Ditt navn" required>
 
@@ -32,7 +36,7 @@ PURPOSE: contact page where users can send a message to Saft og Suse
         <label>Melding</label>
         <textarea id="message" name="melding" placeholder="Skriv din melding her..." required></textarea>
 
-        <input id="submit" name="submit" type="submit" value="Send">
+        <input id="submit" name="submit" type="submit" value="Send" onclick="autofillEmail()">
       </form>
 
     </main>
